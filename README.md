@@ -1,1 +1,1 @@
-This folder contains project for 0x00-Hello world
+Contains tasks of C course
