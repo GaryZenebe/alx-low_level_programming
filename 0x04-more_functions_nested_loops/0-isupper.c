@@ -9,6 +9,7 @@
 int _isupper(int c)
 {
 	char l, i;
+
 	i = (char)c;
 
 
