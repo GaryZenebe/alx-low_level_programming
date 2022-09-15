@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "_putchar.c"
 /**
  * main - check the code
  *
@@ -28,6 +29,6 @@ int main(void)
 			printf("%c", ' ');
 		}
 	}
-	printf("%c", ' ');
+	printf("%c", '\n');
 	return (0);
 }
