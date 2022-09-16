@@ -1,31 +1,37 @@
-#include "main.h"
-#include <stdio.h>
+#include<stdio.h>
 /**
- * print_fizzbuzz - prints num
- * Return: nothing
+ * main - check the code
+ *
+ * Return: always 0
  */
-void print_fizzbuzz(void)
+int main(void)
 {
 	int i = 1;
 
-	for (i = 1; i < 100; i++)
+	while (i <= 100)
 	{
-		if (i % 3 && i % 5)
+		if (i % 3 == 0)
 		{
-		printf("FizzBuzz");
+			printf("Fizz");
+			printf("%c", ' ');
 		}
-		else if (i % 3)
+		else if (i % 5 == 0)
 		{
-		printf("Fizz");
-		continue;
+			printf("Buzz");
+			printf("%c", ' ');
 		}
-		else if (i % 5)
+		else if (i % 5 == 0 && i % 3 == 0)
 		{
-		printf("Buzz");
+			printf("FizzBuzz");
+			printf("%c", ' ');
 		}
 		else
 		{
-		printf("%d", i);
+			printf("%d", i);
+			printf("%c", ' ');
 		}
+		i++;
 	}
+	printf("%c", '\n');
+	return (0);
 }
