@@ -10,9 +10,9 @@ int main(void)
 
 	while (i <= 100)
 	{
-		if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("Fizz");
+			printf("FizzBuzz");
 			printf("%c", ' ');
 		}
 		else if (i % 5 == 0)
@@ -20,9 +20,9 @@ int main(void)
 			printf("Buzz");
 			printf("%c", ' ');
 		}
-		else if (i % 5 == 0 && i % 3 == 0)
+		else if (i % 3 == 0)
 		{
-			printf("FizzBuzz");
+			printf("Fizz");
 			printf("%c", ' ');
 		}
 		else
