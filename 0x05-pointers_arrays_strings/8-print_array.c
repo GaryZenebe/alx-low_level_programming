@@ -10,19 +10,22 @@ void print_array(int *a, int n)
 {
 	int i = 0, counter = 1;
 
-	while (counter <= n)
+	if (n > 0)
 	{
-		if (counter == n)
+		while (counter <= n)
 		{
-			printf("%d\n", *(a + i));
-			i++;
-			counter++;
-		}
-		else
-		{
-			printf("%d, ", *(a + i));
-			i++;
-			counter++;
+			if (counter == n)
+			{
+				printf("%d\n", *(a + i));
+				i++;
+				counter++;
+			}
+			else
+			{
+				printf("%d, ", *(a + i));
+				i++;
+				counter++;
+			}
 		}
 	}
 }
